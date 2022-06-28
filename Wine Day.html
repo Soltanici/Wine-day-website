@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Day</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+    <style >
+        $yellow:#f5ba1a;
+        $black:#000000;
+        $grey:#cccccc;
+        body {
+            background-color: lightcoral;
+            background-position: auto;
+            font-style: italic;
+            text-align: center;
+            background: url(https://www.milestii-mici.md/images/2017/11/08/havuz.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: red;
+            font-size: 3.5em;
+            display: bold;
+            background-color: rgba(255, 255, 255, .7);
+        }
+        li {
+            display: inline;
+            font-style: italic;
+            text-align: center;
+            background-color: rgba(255, 255, 255, .7);
+            color: beige;
+            font-size: xx-large;
+        }
+        p{
+            z-index:100;
+            text-align: auto;   
+            color:black;
+            font-size: 2.5em;
+            margin: auto;
+            margin-top:auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Create a column layout with Flexbox */
+        .row {
+            display: flex;
+        }
+
+        /* Left column (menu) */
+        .left {
+            flex: 35%;
+            padding: 15px 0;
+        }
+
+        .left h2 {
+            padding-left: 8px;
+        }
+
+        /* Right column (page content) */
+        .right {
+            flex: 65%;
+            padding: 15px;
+        }
+
+        /* Style the search box */
+        #mySearch {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid #ddd;
+        }
+
+        /* Style the navigation menu inside the left column */
+        #myMenu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myMenu li a {
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block
+        }
+
+        #myMenu li a:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>National Wine Day In Republic of Moldova</h1>
+    <div class="row">
+        <div class="left" style="background-color:rgba(255, 255, 255, .7)">
+          <h2">Menu</h2>
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+        <li ><a href="Wine Day.html">Home</a></li>
+        <li ><a href="Registration.html">Registration</a></li>
+        <li ><a href="#News">News</a></li>
+        <li ><a href="ContactUs.html">Contact</a></li>
+        <li ><a href="Gallery.html">Galery</a></li>
+        <li ><a href="faq.html">FAQ</a></li>
+      </ul>
+</div>
+    <div class="right" style="background-color:rgba(255, 255, 255, .7)" >
+    <p>On the first weekend of October, Moldovans 
+        <br>celebrate National Wine Day.This holiday was  
+        <br>established in 2001 to recognize the significance 
+        <br>of wine-making and viticulture. The celebration usually 
+        <br>lasts all month and this year, begin from 01.10.2022 till 31.10.2022</p>
+      </div>
+    </div>
+      <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+</body>
+</html>

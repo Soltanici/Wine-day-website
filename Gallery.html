@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="description" content="Responsive Image Gallery">
+  <meta name="author" content="Tim Wells">
+  <title>Wine Day</title>
+  <!-- add icon link -->
+  <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+  <style>
+    button{
+        background-color: aliceblue;
+    }
+    #gallery {
+        line-height:0;
+        -webkit-column-count:5; /* split it into 5 columns */
+        -webkit-column-gap:5px; /* give it a 5px gap between columns */
+        -moz-column-count:5;
+        -moz-column-gap:5px;
+        column-count:5;
+        column-gap:5px;
+    }
+    #gallery img {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom:5px; /* to match column gap */
+    }
+    /*@media (max-width: 1200px) {
+        #gallery {
+            -moz-column-count:    4;
+            -webkit-column-count: 4;
+            column-count:         4;
+        }
+    }
+    @media (max-width: 1000px) {
+        #gallery {
+            -moz-column-count:    3;
+            -webkit-column-count: 3;
+            column-count:         3;
+        }
+    }*/
+    @media (max-width: 800px) {
+        #gallery {
+            -moz-column-count:    2;
+            -webkit-column-count: 2;
+            column-count:         2;
+            }
+    }
+    #gallery img:hover {
+        filter: grayscale(100%);
+    }
+    body{
+            font-style: italic;
+            background: url(https://www.milestii-mici.md/images/2017/11/08/havuz.jpg);
+    }
+  </style>
+</head>
+<body>
+    <button onclick="history.back()">Go Back</button>
+<div id="gallery">
+  
+   <img src="Gallery Photoes/img1.jpg">
+   <img src="Gallery Photoes/img2.jpg">
+   <img src="Gallery Photoes/img3.jpg">
+   <img src="Gallery Photoes/img4.jpg">
+   <img src="Gallery Photoes/img5.jpg">
+   <img src="Gallery Photoes/img6.jpg">
+   <img src="Gallery Photoes/img7.jpg">
+   <img src="Gallery Photoes/img8.jpg">
+   <img src="Gallery Photoes/img9.jpg">
+   <img src="Gallery Photoes/img10.jpg">
+   <img src="Gallery Photoes/img11.jpg">
+   <img src="Gallery Photoes/img12.jpg">
+   <img src="Gallery Photoes/img13.jpg">
+   <img src="Gallery Photoes/img14.jpg">
+   <img src="Gallery Photoes/img15.jpg">
+   <img src="Gallery Photoes/img16.jpg">
+   <img src="Gallery Photoes/img17.jpg">
+   <img src="Gallery Photoes/img18.jpg">
+   <img src="Gallery Photoes/img19.jpg">
+   <img src="Gallery Photoes/img20.jpg">
+   <img src="Gallery Photoes/img21.jpg">
+   <img src="Gallery Photoes/img22.jpg">
+   <img src="Gallery Photoes/img23.jpg">
+   <img src="Gallery Photoes/img24.jpg">
+   <img src="Gallery Photoes/img25.jpg">
+   <img src="Gallery Photoes/img26.jpg">
+   <img src="Gallery Photoes/img27.jpg">
+   <img src="Gallery Photoes/img28.jpg">
+   <img src="Gallery Photoes/img29.jpg">
+   <img src="Gallery Photoes/img30.jpg">
+   <img src="Gallery Photoes/img31.jpg">
+   <img src="Gallery Photoes/img32.jpg">
+   <img src="Gallery Photoes/img33.jpg">   
+   <img src="Gallery Photoes/img34.jpg"> 
+   <img src="Gallery Photoes/img35.jpg"> 
+
+  </div>
+ 
+ </body>
+</html>

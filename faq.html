@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Day</title>
+    <!-- add icon link -->
+    <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+    <style>
+        body{
+            font-style: italic;
+            background: url(https://www.milestii-mici.md/images/2017/11/08/havuz.jpg);
+        }
+        .faq-heading{
+            border-bottom: #777;
+            padding: 20px 60px;
+        }
+        .faq-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hr-line{
+            width: 60%;
+            margin: auto;
+  
+        }
+        /* Style the buttons that are used to open and close the faq-page body */
+        .faq-page {
+            color: #444;
+            cursor: pointer;
+            padding: 30px 20px;
+            width: 60%;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            margin: auto;
+        }
+        .faq-body{
+            margin: auto;
+            /* text-align: center; */
+            width: 50%; 
+            padding: auto;
+   
+        }
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active,.faq-page:hover {
+            background-color: rgba(255, 255, 255, .7);
+        }
+        /* Style the faq-page panel. Note: hidden by default */
+        .faq-body {
+            padding: 0 18px;
+            background-color: rgba(255, 255, 255, .7);
+            display: none;
+            overflow: hidden;
+        }
+        .faq-page:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+        button{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button onclick="history.back()">Go Back</button>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+            <div class="faq-one">
+                <!-- faq question -->
+                <h1 class="faq-page">When is National Wine Day In Republic of Moldova?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>The annual Moldova National Wine Day and wine festival took place on October 5 and 6 in the capital, Chisinau. 
+                        The festival celebrates the fall harvest and recognizes the country's long history of winemaking, which dates 
+                        back some 500 years. The event is one of the highlights of the cultural calendar and brings winemakers to town 
+                        from around the country. In addition to drinking, of course, the festival offers plenty of opportunities for 
+                        dancing and enjoying the country's rich folk traditions.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+                <!-- faq question -->
+                <h1 class="faq-page">Why is so important to celebrate National Wine Day In Republic of Moldova?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>National Wine Day is the celebration of Moldovan wines and long standing traditions of winemaking. It is marked 
+                        with colorful fairs, wine tastings, competitions, open-air performances, and other events. 
+                        Many winemaking companies participate in the activities to promote their wines. Some people wear national clothing 
+                        on the occasion of the festival, honoring the country's cultural traditions.</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-three">
+                <!-- faq question -->
+<h1 class="faq-page">How many people is visiting National Wine Day In Republic of Moldova yearly?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Over 100,000 visitors participate in the National Wine Day in Moldova written by moldpres.md October 4, 
+                        2016 Over 100,000 visitors attended the National Wine Day, which took place on 1 and 2 October on the 
+                        Great National Assembly Square (PMAN) in Chisinau.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var faq = document.getElementsByClassName("faq-page");
+        var i;
+        for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+    </script>
+</body>
+</html>
